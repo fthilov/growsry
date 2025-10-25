@@ -1,4 +1,5 @@
-import { GET } from "@/app/api/shops/route";
+import { GET } from "@api/shops/route";
+import Link from "next/link";
 
 export default async function Main() {
     const response = await GET();
@@ -8,9 +9,11 @@ export default async function Main() {
         <main className="p-8">
             <div className="flex justify-between items-center mb-4">
                 <h1 className="text-2xl font-bold">Shops</h1>
-                <button type="button" className="text-2xl">
-                    +
-                </button>
+                <Link href="/shops/new">
+                    <button type="button" className="text-2xl">
+                        +
+                    </button>
+                </Link>
             </div>
 
             <ul>
