@@ -22,8 +22,8 @@
       "@/*": ["./*"],
       "@components/*": ["./app/core/components/*"],
       "@api/*": ["./app/api/*"],
-      "@prisma/client": ["./node_modules/@prisma/client"]
-
+      "@prisma/client": ["./node_modules/@prisma/client"],
+      "@lib/*": ["./app/lib/*"]
     }
   },
   "include": [
