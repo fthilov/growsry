@@ -1,4 +1,6 @@
-import prisma from "@/app/lib/prisma";
+"use server";
+
+import prisma from "@lib/prisma";
 
 export async function GET(context: any) {
     const { params } = context;
