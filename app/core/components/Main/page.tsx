@@ -1,10 +1,7 @@
-import { GET } from "@api/shops/route";
 import Link from "next/link";
+import ShopList from "../ShopList/page";
 
 export default async function Main() {
-    const response = await GET();
-    const shops = await response.json();
-
     return (
         <main className="p-8">
             <div className="flex justify-between items-center mb-4">
@@ -15,14 +12,7 @@ export default async function Main() {
                     </button>
                 </Link>
             </div>
-
-            <ul>
-                {shops.map((shop: any) => (
-                    <li key={shop.id} className="border-b py-2">
-                        {shop.name}
-                    </li>
-                ))}
-            </ul>
+            <ShopList />
         </main>
     );
 }
