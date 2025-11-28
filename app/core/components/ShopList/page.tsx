@@ -1,5 +1,6 @@
 "use client";
 
+import type { Shop } from "@app/types/shop";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 

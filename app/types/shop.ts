@@ -1,4 +1,4 @@
-type Shop = {
+export type Shop = {
     id: number;
     createdAt: string;
     updatedAt: string;
