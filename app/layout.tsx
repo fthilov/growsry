@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@app/globals.css";
 
 export const metadata: Metadata = {
     title: "Growsry",
-    description: "Grow w/o sorry",
+    description:
+        "A personal recipe and grocery list manager by Felix von dem Berge.",
 };
 
 export default function RootLayout({
